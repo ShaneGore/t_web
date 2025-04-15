@@ -3,18 +3,19 @@ import { Menu, Phone, Clock, MapPin, ChevronRight, Play, Instagram, Facebook, Tw
 import heroImage from './assets/images/hero-lab.png';
 import workoutImage from './assets/images/workout.png';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import {BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './pages/About';
 import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
