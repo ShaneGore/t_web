@@ -2,8 +2,7 @@ import React from 'react';
 import { Menu, Phone, Clock, MapPin, ChevronRight, Play, Instagram, Facebook, Twitter, CheckCircle, ArrowRight, Star, LineChart, Activity } from 'lucide-react';
 import heroImage from './assets/images/hero-lab.png';
 import workoutImage from './assets/images/workout.png';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import {BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import About from './pages/About';
 import Contact from './pages/Contact';
 
