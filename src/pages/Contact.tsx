@@ -1,31 +1,84 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, Mail, Phone, MapPin } from 'lucide-react';
+import { Menu, Mail, Phone, MapPin, ArrowLeftRight, HeartPulse } from 'lucide-react';
 
 export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
-      <nav className="bg-white shadow-sm fixed w-full z-50">
+ {/* Navigation */}
+ <nav className="bg-white shadow-md fixed w-full z-50 top-0 left-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16 items-center">
-            <div className="flex items-center">
-              <Link to="/" className="text-2xl font-bold text-indigo-900">TRT Clinic</Link>
+          <div className="flex justify-between h-20 items-center">
+            {/* Logo */}
+            <div className="flex-shrink-0">
+              <Link to="/" className="flex items-center space-x-2">
+                <HeartPulse className="h-8 w-8 text-blue-800" />
+                <span className="text-2xl font-extrabold tracking-wide text-blue-900">
+                  ReVive Health
+                </span>
+              </Link>
             </div>
+
+            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <Link to="/about" className="text-gray-700 hover:text-indigo-900">About</Link>
-              <Link to="/#how-it-works" className="text-gray-700 hover:text-indigo-900">How It Works</Link>
-              <Link to="/#treatment" className="text-gray-700 hover:text-indigo-900">Treatment</Link>
-              <Link to="/contact" className="bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition">
+              <div className="flex items-center space-x-6">
+                <Link
+                  to="/about"
+                  className="text-gray-700 hover:text-blue-900 font-medium"
+                >
+                  About
+                </Link>
+                <a
+                  href="#how-it-works"
+                  className="text-gray-700 hover:text-blue-900 font-medium"
+                >
+                  How It Works
+                </a>
+              </div>
+
+              <div className="pl-2 border-l border-gray-200">
+                <Link
+                  to="/women"
+                  className="text-teal-600 hover:text-teal-700 px-4 py-2 rounded-full border border-teal-200 transition font-medium flex items-center"
+                >
+                  <ArrowLeftRight className="h-4 w-4 mr-2" />
+                  Switch to Women's Services
+                </Link>
+              </div>
+            </div>
+
+            {/* CTA Button */}
+            <div className="hidden md:block">
+              <Link
+                to="/contact"
+                className="bg-blue-800 text-white px-6 py-2 rounded-full hover:bg-blue-900 transition font-medium"
+              >
                 Start Your Journey
               </Link>
             </div>
+
             <div className="md:hidden">
-              <Menu className="h-6 w-6 text-gray-700" />
+              <button
+                className="p-2 rounded-md hover:bg-gray-100"
+                aria-label="Open Menu"
+              >
+                <Menu className="h-6 w-6 text-gray-700" />
+              </button>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <div className="md:hidden">
+              <button
+                className="p-2 rounded-md hover:bg-gray-100"
+                aria-label="Open Menu"
+              >
+                <Menu className="h-6 w-6 text-gray-700" />
+              </button>
             </div>
           </div>
         </div>
       </nav>
+
 
       {/* Contact Form Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
