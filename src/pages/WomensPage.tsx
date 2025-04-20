@@ -6,8 +6,8 @@ import BenefitsSection from '../components/womensServices/BenefitsSection';
 import Testimonials from '../components/womensServices/Testimonials';
 import FaqSection from '../components/womensServices/FaqSection';
 import CallToAction from '../components/shared/CallToAction';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
+import Footer from '../components/womensServices/Footer';
+import Navbar from '../components/womensServices/Navbar';
 
 
 

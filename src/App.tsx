@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link, useNavigate } from 'react-router-dom';
 import { Heart, Activity, ChevronRight, HeartPulse } from 'lucide-react';
-import MensPage from './pages/MensPage';
+import MensPage from './pages/MensPage.tsx';
 import WomensPage from './pages/WomensPage';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import WomenImage from './assets/images/women_laughing.jpg';
+import WomensContact from './pages/WomensContact.tsx';
+
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/men" element={<MensPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/womenscontact" element={<WomensContact />} />
+
       </Routes>
     </BrowserRouter>
   );

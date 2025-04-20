@@ -115,6 +115,7 @@ const TreatmentTracking: React.FC = () => {
                 <div className="mt-6 pt-6 border-t border-gray-100">
                   <div className="flex justify-between items-center">
                     <div className="text-sm text-gray-600">Next Check-in:</div>
+                    <div className="text-sm font-medium text-teal-600">May 20, 2025</div>
                     <div className="text-sm font-medium text-gray-900">May 15, 2025</div>
                   </div>
                 </div>
@@ -130,10 +131,10 @@ const TreatmentTracking: React.FC = () => {
                 </div>
                 <div className="ml-3">
                   <p className="text-sm text-teal-800">
-                    "Your hormones are balancing nicely! Consider adding 20 minutes of yoga to your morning routine."
+                    "Your hormones are balancing nicely! We can begin to reduce your dosage."
                   </p>
                   <p className="text-xs text-teal-600 mt-1">
-                    — Dr. Sarah, Your Provider
+                    — Dr. Sarah, Hormone Specialist
                   </p>
                 </div>
               </div>

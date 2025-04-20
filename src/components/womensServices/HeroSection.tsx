@@ -1,5 +1,7 @@
 import React from 'react';
 import { BookOpen, Check } from 'lucide-react';
+import { ArrowRight, Play, CheckCircle, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const HeroSection: React.FC = () => {
   return (
@@ -17,7 +19,7 @@ const HeroSection: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0 md:pr-12">
             <div className="inline-block bg-white/10 backdrop-blur-sm px-4 py-1 rounded-full text-white text-sm font-medium mb-6">
-              WOMEN'S SERVICES
+              WELL WOMAN
             </div>
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6 leading-tight">
               Expert Hormone Therapy, <br />Tailored for Women
@@ -25,20 +27,24 @@ const HeroSection: React.FC = () => {
             <p className="text-teal-50 text-lg mb-8 max-w-lg">
               Personalized hormone replacement therapy designed around your unique needs, helping you reclaim your vitality, balance, and confidence.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#consultation" className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-white text-teal-700 font-medium transition-all hover:bg-teal-50 hover:shadow-lg">
-                Book Your Discovery Call
-              </a>
-              <a href="#learn-more" className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-transparent border border-white text-white font-medium transition-all hover:bg-white/10">
-                <BookOpen size={18} className="mr-2" />
-                See How It Works
-              </a>
+            <div className="space-y-4 md:space-y-0 md:flex md:space-x-4">
+              <Link
+                to="/womenscontact"
+                className="w-full md:w-auto bg-white text-[#1E3D59] px-8 py-4 rounded-full hover:bg-blue-50 transition duration-300 flex items-center justify-center group"
+              >
+                Start Your Journey{" "}
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <button className="w-full md:w-auto border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white/10 transition duration-300 flex items-center justify-center group">
+                See How It Works{" "}
+                <Play className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </button>
             </div>
           </div>
           <div className="md:w-1/2 relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/5699431/pexels-photo-5699431.jpeg"
+                src="https://images.pexels.com/photos/7578803/pexels-photo-7578803.jpeg"
                 alt="Female doctor consulting with patient"
                 className="w-full h-auto object-cover"
               />
@@ -50,7 +56,8 @@ const HeroSection: React.FC = () => {
                   <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=80" alt="Patient" className="w-10 h-10 rounded-full border-2 border-white" />
                 </div>
                 <div className="ml-4">
-                  <p className="text-xs text-gray-500 font-medium">Trusted by thousands of women</p>
+                  <p className="text-xs text-gray-500 font-medium">Building trusted relationships, one patient at a time.
+                  </p>
                   <div className="flex items-center mt-1">
                     {[...Array(5)].map((_, i) => (
                       <svg key={i} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
@@ -96,7 +103,7 @@ const HeroSection: React.FC = () => {
               </div>
             </div>
             <div>
-              <h3 className="text-white font-medium">FDA-Approved</h3>
+              <h3 className="text-white font-medium">EMA-Approved</h3>
               <p className="text-teal-100 text-sm">Safe, regulated hormone treatments</p>
             </div>
           </div>

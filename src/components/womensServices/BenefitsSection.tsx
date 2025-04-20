@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const BenefitsSection: React.FC = () => {
   return (
@@ -124,9 +125,11 @@ const BenefitsSection: React.FC = () => {
             </div>
             
             <div className="mt-10">
-              <a href="#consultation" className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-teal-500 text-white font-medium transition-all hover:bg-teal-600 hover:shadow-lg">
+              <Link
+                to="/womenscontact"
+                className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-teal-500 text-white font-medium transition-all hover:bg-teal-600 hover:shadow-lg">
                 Experience the Benefits
-              </a>
+              </Link>
             </div>
           </div>
         </div>

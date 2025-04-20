@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HeartPulse } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -7,40 +8,17 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="space-y-4">
-            <div className="flex items-center">
-              <svg
-                className="w-8 h-8 text-teal-500"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16 6V4.5C16 3.12 14.88 2 13.5 2h-3C9.12 2 8 3.12 8 4.5V6"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M12 15V3"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M19 6H5C3.89 6 3 6.89 3 8v10c0 1.11 0.89 2 2 2h14c1.11 0 2-0.89 2-2V8c0-1.11-0.89-2-2-2Z"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <span className="ml-2 font-medium text-xl text-white">RevVive Health</span>
+          <div>
+            <div className="flex items-center space-x-2 mb-4">
+              <HeartPulse className="h-6 w-6 text-teal-400" />
+              <h3 className="text-xl font-bold">ReVive Health</h3>
             </div>
-            <p className="text-sm">
-              Leading the way in specialized healthcare, bringing innovative medical services for women's hormonal health.
+            <p className="text-gray-400">
+              Leading the way in specialized healthcare through modern medical
+              services for men and women.
             </p>
+          </div>
+        
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-teal-500 transition-colors">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -64,9 +42,7 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Services</h3>
             <ul className="space-y-2">
               <li><Link to="/" className="hover:text-teal-500 transition-colors">Women's HRT</Link></li>
-              <li><Link to="/mens-services" className="hover:text-teal-500 transition-colors">Men's TRT</Link></li>
-              <li><Link to="/thyroid" className="hover:text-teal-500 transition-colors">Thyroid Management</Link></li>
-              <li><Link to="/weight-management" className="hover:text-teal-500 transition-colors">Weight Management</Link></li>
+              <li><Link to="/men" className="hover:text-teal-500 transition-colors">Men's TRT</Link></li>
             </ul>
           </div>
 
@@ -74,8 +50,6 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Company</h3>
             <ul className="space-y-2">
               <li><Link to="/about" className="hover:text-teal-500 transition-colors">About Us</Link></li>
-              <li><Link to="/careers" className="hover:text-teal-500 transition-colors">Careers</Link></li>
-              <li><Link to="/blog" className="hover:text-teal-500 transition-colors">Blog</Link></li>
               <li><Link to="/contact" className="hover:text-teal-500 transition-colors">Contact</Link></li>
             </ul>
           </div>
@@ -84,9 +58,7 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Resources</h3>
             <ul className="space-y-2">
               <li><Link to="/faq" className="hover:text-teal-500 transition-colors">FAQs</Link></li>
-              <li><Link to="/privacy" className="hover:text-teal-500 transition-colors">Privacy Policy</Link></li>
-              <li><Link to="/terms" className="hover:text-teal-500 transition-colors">Terms & Conditions</Link></li>
-              <li><Link to="/support" className="hover:text-teal-500 transition-colors">Support Center</Link></li>
+              <li><Link to="/privacy" className="hover:text-teal-500 transition-colors">Locations</Link></li>
             </ul>
           </div>
         </div>

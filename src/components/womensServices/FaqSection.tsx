@@ -89,7 +89,7 @@ const FaqSection: React.FC = () => {
             href="#consultation"
             className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-teal-500 text-white font-medium transition-all hover:bg-teal-600 hover:shadow-lg"
           >
-            Schedule a Free Consultation
+            Schedule a Consultation
           </a>
         </div>
       </div>

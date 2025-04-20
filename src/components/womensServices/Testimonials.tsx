@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Testimonials: React.FC = () => {
   const testimonials = [
@@ -88,12 +89,12 @@ const Testimonials: React.FC = () => {
               <p className="text-teal-50 mb-8">
                 Join thousands of women who have reclaimed their energy, mood, and quality of life through personalized hormone therapy.
               </p>
-              <a
-                href="#consultation"
+              <Link
+                to="/womenscontact"
                 className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-white text-teal-700 font-medium transition-all hover:bg-teal-50 hover:shadow-lg"
               >
-                Book Your Free Consultation
-              </a>
+                Book Your Consultation
+              </Link>
             </div>
             <div className="md:w-1/2 relative">
               <img

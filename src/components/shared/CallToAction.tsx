@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface CallToActionProps {
   title: string;
@@ -25,19 +26,14 @@ const CallToAction: React.FC<CallToActionProps> = ({ title, buttonText, linkTo }
             </h2>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
-              <a
-                href={linkTo}
+              
+              <Link
+                 to="/wommenscontact"
                 className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-teal-500 text-white font-medium transition-all hover:bg-teal-600 hover:shadow-lg"
               >
                 {buttonText}
-              </a>
-              
-              <a
-                href="#learn-more"
-                className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-white border border-teal-200 text-teal-700 font-medium transition-all hover:bg-teal-50 hover:shadow-lg"
-              >
-                Learn More
-              </a>
+              </Link>
+           
             </div>
             
             <div className="mt-8 flex items-center justify-center">
@@ -48,7 +44,7 @@ const CallToAction: React.FC<CallToActionProps> = ({ title, buttonText, linkTo }
               </div>
               
               <div className="ml-4 text-sm text-gray-600">
-                Join thousands of women who have transformed their lives
+              Building trusted relationships, one patient at a time.
               </div>
             </div>
           </div>

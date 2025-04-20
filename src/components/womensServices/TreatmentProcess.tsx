@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const TreatmentProcess: React.FC = () => {
   return (
-    <section id="learn-more" className="py-20 bg-white">
+    <section id="how-it-works" className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-serif font-semibold text-gray-900 mb-4">
@@ -16,11 +17,11 @@ const TreatmentProcess: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="relative group">
-            <div className="absolute -left-4 -top-4 w-16 h-16 flex items-center justify-center bg-teal-500 text-white rounded-full text-xl font-bold z-20 transition-transform group-hover:-translate-y-2">
-              1
+          <div className="absolute -left-4 -top-4 w-16 h-16 flex items-center justify-center bg-teal-500 text-white rounded-full text-xl font-bold z-20 transform transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-lg">
+          1
             </div>
-            <div className="rounded-lg bg-teal-50 p-8 h-full transform transition-transform duration-300 hover:scale-105 hover:shadow-lg relative z-10">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Complete Assessment</h3>
+            <div className="rounded-lg bg-teal-50 p-8 h-full transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg relative z-10">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Complete Assessment</h3>
               <p className="text-gray-600 mb-6">
                 Take our comprehensive women's hormone assessment to help us
                 understand your symptoms and medical history. Our detailed questionnaire
@@ -52,11 +53,11 @@ const TreatmentProcess: React.FC = () => {
           </div>
 
           <div className="relative group">
-            <div className="absolute -left-4 -top-4 w-16 h-16 flex items-center justify-center bg-teal-500 text-white rounded-full text-xl font-bold z-20 transition-transform group-hover:-translate-y-2">
-              2
+          <div className="absolute -left-4 -top-4 w-16 h-16 flex items-center justify-center bg-teal-500 text-white rounded-full text-xl font-bold z-20 transform transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-lg">
+          2
             </div>
-            <div className="rounded-lg bg-teal-50 p-8 h-full transform transition-transform duration-300 hover:scale-105 hover:shadow-lg relative z-10">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Meet Your Provider</h3>
+            <div className="rounded-lg bg-teal-50 p-8 h-full transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg relative z-10">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Meet Your Provider</h3>
               <p className="text-gray-600 mb-6">
                 Connect with a licensed female health specialist who will
                 discuss your assessment results, symptoms, and create a
@@ -88,11 +89,11 @@ const TreatmentProcess: React.FC = () => {
           </div>
 
           <div className="relative group">
-            <div className="absolute -left-4 -top-4 w-16 h-16 flex items-center justify-center bg-teal-500 text-white rounded-full text-xl font-bold z-20 transition-transform group-hover:-translate-y-2">
-              3
+          <div className="absolute -left-4 -top-4 w-16 h-16 flex items-center justify-center bg-teal-500 text-white rounded-full text-xl font-bold z-20 transform transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-lg">
+          3
             </div>
-            <div className="rounded-lg bg-teal-50 p-8 h-full transform transition-transform duration-300 hover:scale-105 hover:shadow-lg relative z-10">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Start Treatment</h3>
+            <div className="rounded-lg bg-teal-50 p-8 h-full transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg relative z-10">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Start Treatment</h3>
               <p className="text-gray-600 mb-6">
                 Receive your personalized hormone therapy delivered to your doorstep.
                 Our continuous support ensures you achieve optimal results while
@@ -125,9 +126,9 @@ const TreatmentProcess: React.FC = () => {
         </div>
 
         <div className="text-center mt-12">
-          <a href="#consultation" className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-teal-500 text-white font-medium transition-all hover:bg-teal-600 hover:shadow-lg">
+          <Link to="/womenscontact" className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-teal-500 text-white font-medium transition-all hover:bg-teal-600 hover:shadow-lg">
             Begin Your Journey
-          </a>
+          </Link>
         </div>
       </div>
     </section>
